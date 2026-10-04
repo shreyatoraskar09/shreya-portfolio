@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Toraskar | Software Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Shreya Toraskar - Software Developer specializing in ASP.NET Core, C#, Web API, SQL Server, and Angular full-stack applications.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Ambient Background Glow Effects -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Mouse Spotlight Tracker -->
+    <div class="mouse-spotlight" id="mouseSpotlight"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+
+                <span class="brand-name">Shreya Toraskar</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="#contact" class="nav-link"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="btn btn-outline btn-sm nav-resume-btn" id="openResumeBtn">
+                    <i class="fa-solid fa-file-pdf"></i> Resume
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Open to Software Developer Roles</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Shreya Toraskar</span>
+                    </h1>
+
+                    <div class="typewriter-container">
+                        <span class="typewriter-prefix">I build</span>
+                        <span class="typewriter-text" id="typewriterText"></span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Passionate <strong>Software Developer</strong> with 1+ years of experience engineering robust
+                        <strong>3-tier web applications</strong>, high-performance <strong>RESTful APIs</strong>, and
+                        optimized
+                        <strong>SQL Server databases</strong> using <strong>C#, ASP.NET Core, EF Core</strong>, and
+                        <strong>Angular</strong>.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-rocket"></i> View Projects
+                        </a>
+                        <button class="btn btn-outline btn-lg" id="heroResumeBtn">
+                            <i class="fa-solid fa-file-arrow-down"></i> Preview Resume
+                        </button>
+                        <a href="#contact" class="btn btn-secondary btn-lg">
+                            <i class="fa-regular fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://linkedin.com/in/shreya-toraskar03" target="_blank" rel="noopener"
+                            class="social-link" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <button class="social-link copy-btn" data-copy="shreyatoraskar09@gmail.com" title="Copy Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                        <button class="social-link copy-btn" data-copy="9272024582" title="Copy Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                        <img src="images/profile.jpg" alt="Shreya Toraskar" class="profile-img">
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Metrics Counter Strip -->
+            <div class="container hero-stats-container">
+                <div class="glass-card stat-card">
+                    <div class="stat-number gradient-text" data-target="1">1+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number gradient-text" data-target="9.7">9.7</div>
+                    <div class="stat-label">B.Sc. CGPA Score</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number gradient-text" data-target="3">3+</div>
+                    <div class="stat-label">Enterprise Projects</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number gradient-text">100%</div>
+                    <div class="stat-label">SOLID & Clean Code</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About <span class="gradient-text"> Shreya</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="glass-card about-card-main">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Professional Overview</h3>
+                        <p>
+                            I am a results-driven <strong>Software Developer</strong> with hands-on expertise building
+                            scalable,
+                            maintainable, and secure enterprise applications. Skilled in designing <strong>RESTful
+                                APIs</strong>,
+                            implementing <strong>JWT authentication & role-based authorization</strong>, and designing
+                            layered
+                            <strong>3-tier software architectures</strong>.
+                        </p>
+                        <p>
+                            During my journey at <strong>G-Next Innovation Code Square</strong>, I contributed to key
+                            enterprise systems
+                            like <em>GUrbanNext</em> (Housing Society Management) and <em>GNTicketCore</em> (Web Ticket
+                            Management System),
+                            focusing on clean code, database query optimization, and continuous sprint delivery in Agile
+                            environments.
+                        </p>
+
+                        <div class="about-highlights-grid">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <div>
+                                    <h4>3-Tier Architecture</h4>
+                                    <p>Strict separation of Presentation, Business Logic, and Data Access layers.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <div>
+                                    <h4>Secure Coding & RBAC</h4>
+                                    <p>JWT authentication, role permissions, input validation & SQL injection
+                                        prevention.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <div>
+                                    <h4>Database Optimization</h4>
+                                    <p>Stored Procedures, Views, Triggers, Indexes & LINQ query performance tuning.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-cubes"></i>
+                                <div>
+                                    <h4>SOLID Principles</h4>
+                                    <p>Loose coupling via Dependency Injection and Repository design patterns.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card about-card-quickinfo">
+                        <h3><i class="fa-solid fa-address-card"></i> Key Details</h3>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-user-tie"></i> Role:</span>
+                                <span class="info-value">Software Developer</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                                <span class="info-value">B.Sc. Computer Science (CGPA: 9.7)</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-building"></i> Experience:</span>
+                                <span class="info-value">1+ Years Professional</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <a href="mailto:shreyatoraskar09@gmail.com"
+                                    class="info-value link-text">shreyatoraskar09@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+                                <a href="tel:9272024582" class="info-value link-text">+91 9272024582</a>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-brands fa-linkedin"></i> LinkedIn:</span>
+                                <a href="https://linkedin.com/in/shreya-toraskar03" target="_blank" rel="noopener"
+                                    class="info-value link-text">shreya-toraskar03</a>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                <span class="info-value">Maharashtra, India</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Technical Expertise</span>
+                    <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Skill Filter & Search Controls -->
+                <div class="skills-controls">
+                    <div class="skill-search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="skillSearchInput"
+                            placeholder="Search tech stack (e.g. C#, SQL, Angular, EF Core)...">
+                    </div>
+
+                    <div class="skill-filter-buttons" id="skillFilters">
+                        <button class="filter-btn active" data-filter="all">All Tech Stack</button>
+                        <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+                        <button class="filter-btn" data-filter="database">Database & SQL</button>
+                        <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+                        <button class="filter-btn" data-filter="architecture">Architecture & Patterns</button>
+                    </div>
+                </div>
+
+                <!-- Skill Cards Grid -->
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Backend -->
+                    <div class="glass-card skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-code skill-icon backend-color"></i>
+                            <div>
+                                <h3>C# Programming</h3>
+                                <span class="skill-badge">Core Backend</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Object-oriented programming, generic classes, LINQ, exception handling,
+                            and 3-tier business logic implementation.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-server skill-icon backend-color"></i>
+                            <div>
+                                <h3>ASP.NET Core & Web API</h3>
+                                <span class="skill-badge">REST APIs</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Building RESTful microservices, custom middleware, Dependency Injection,
+                            request validation, and API performance tuning.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-shield-cat skill-icon backend-color"></i>
+                            <div>
+                                <h3>JWT Authentication & RBAC</h3>
+                                <span class="skill-badge">Security</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Token-based authentication, claim-based authorization, role permissions,
+                            and session protection.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-diagram-project skill-icon backend-color"></i>
+                            <div>
+                                <h3>Entity Framework Core & ADO.NET</h3>
+                                <span class="skill-badge">ORM / Data</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Code-First & DB-First EF Core, DbContext, LINQ queries, DataReader,
+                            DataAdapter, DataSet, and transaction scopes.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-window-restore skill-icon backend-color"></i>
+                            <div>
+                                <h3>ASP.NET MVC & Razor Views</h3>
+                                <span class="skill-badge">MVC Stack</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Strongly-typed ViewModels, HTML Helpers, Controller actions, partial
+                            views, and ASP.NET Web Forms.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="glass-card skill-card" data-category="database">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-database skill-icon db-color"></i>
+                            <div>
+                                <h3>Microsoft SQL Server</h3>
+                                <span class="skill-badge">RDBMS</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Relational schema design, normalization, foreign keys, complex JOINs,
+                            subqueries, and transaction management.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="database">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-bolt skill-icon db-color"></i>
+                            <div>
+                                <h3>Stored Procedures & Views</h3>
+                                <span class="skill-badge">T-SQL</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Writing optimized Stored Procedures, Triggers, User-Defined Functions
+                            (UDFs), and view aggregations.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="database">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-gauge-high skill-icon db-color"></i>
+                            <div>
+                                <h3>Query Optimization & Indexing</h3>
+                                <span class="skill-badge">Performance</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Clustered & Non-clustered index strategy, execution plan analysis,
+                            parameterized queries, preventing SQL injection.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 86%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="glass-card skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-angular skill-icon frontend-color"></i>
+                            <div>
+                                <h3>Angular (SPA)</h3>
+                                <span class="skill-badge">Frontend Framework</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Single Page Application architecture, TypeScript, Angular components,
+                            services, dependency injection, HttpClient, and routing.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-html5 skill-icon frontend-color"></i>
+                            <div>
+                                <h3>HTML5, CSS3 & JavaScript</h3>
+                                <span class="skill-badge">Web Basics</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Semantic HTML markup, CSS Flexbox/Grid responsive layouts, ES6+ JavaScript
+                            dom manipulation and dynamic rendering.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-arrows-rotate skill-icon frontend-color"></i>
+                            <div>
+                                <h3>AJAX, jQuery & Bootstrap</h3>
+                                <span class="skill-badge">UI Interactivity</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Asynchronous data fetching, partial page updates, responsive grid UI
+                            design, dynamic modals and toast notifications.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Architecture -->
+                    <div class="glass-card skill-card" data-category="architecture">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-cubes-stacked skill-icon arch-color"></i>
+                            <div>
+                                <h3>3-Tier & Layered Architecture</h3>
+                                <span class="skill-badge">System Design</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Clean architecture dividing Presentation Layer, Business Logic Layer
+                            (BLL), and Data Access Layer (DAL).</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="architecture">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-shapes skill-icon arch-color"></i>
+                            <div>
+                                <h3>SOLID Principles & Repository Pattern</h3>
+                                <span class="skill-badge">Design Patterns</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Decoupled system architecture, Dependency Injection container management,
+                            unit-testable components.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-category="architecture">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-people-sync skill-icon arch-color"></i>
+                            <div>
+                                <h3>Agile / Scrum & SDLC</h3>
+                                <span class="skill-badge">Process</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Sprint planning, requirement analysis, bug fixing, unit testing,
+                            debugging, and continuous project milestone delivery.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Career Journey</span>
+                    <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="glass-card timeline-content">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="role-title">Software Developer</h3>
+                                    <div class="company-name">
+                                        <i class="fa-solid fa-building"></i> G-Next Innovation Code Square
+                                    </div>
+                                </div>
+                                <div class="experience-duration">
+                                    <span class="badge badge-primary"><i class="fa-regular fa-calendar"></i> June 2025 –
+                                        Present</span>
+                                    <span class="badge badge-secondary"><i class="fa-solid fa-clock"></i> 1+
+                                        Years</span>
+                                </div>
+                            </div>
+
+                            <p class="experience-summary">
+                                Active software engineer leading design, development, database integration, and
+                                performance optimization for web and desktop enterprise software solutions.
+                            </p>
+
+                            <h4 class="responsibilities-title"><i class="fa-solid fa-list-check"></i> Key
+                                Responsibilities & Achievements:</h4>
+                            <ul class="responsibilities-list">
+                                <li>
+                                    <strong>Architectural Design:</strong> Designed and implemented enterprise web apps
+                                    using <strong>3-Tier Architecture</strong>, strictly decoupling Presentation,
+                                    Business Logic, and Data Access layers in C#.
+                                </li>
+                                <li>
+                                    <strong>Full-Stack MVC & Web API:</strong> Developed interactive web modules using
+                                    <strong>ASP.NET MVC, Razor Views, strongly typed ViewModels</strong>, and
+                                    high-performance <strong>ASP.NET Core RESTful APIs</strong>.
+                                </li>
+                                <li>
+                                    <strong>Security & Authorization:</strong> Implemented secure <strong>JWT
+                                        authentication</strong> and fine-grained <strong>Role-Based Access Control
+                                        (RBAC)</strong> to protect sensitive endpoints and user permissions.
+                                </li>
+                                <li>
+                                    <strong>Database Operations:</strong> Formulated optimized SQL Server objects
+                                    (Stored Procedures, Indexes, Triggers, Views, UDFs) using <strong>ADO.NET, Entity
+                                        Framework Core</strong>, and <strong>LINQ</strong> while preventing SQL
+                                    injection through parameterized queries.
+                                </li>
+                                <li>
+                                    <strong>Asynchronous UX:</strong> Leveraged <strong>AJAX and jQuery</strong> for
+                                    smooth asynchronous data updates without page reloads, significantly enhancing user
+                                    responsiveness.
+                                </li>
+                                <li>
+                                    <strong>Maintainability & Testing:</strong> Applied <strong>SOLID principles,
+                                        Repository Pattern</strong>, and <strong>Dependency Injection</strong> to
+                                    maintain a testable, loosely-coupled codebase.
+                                </li>
+                                <li>
+                                    <strong>Agile Delivery:</strong> Participated in sprint ceremonies, milestone
+                                    reviews, bug fixes, client requirement translations, and application maintenance.
+                                </li>
+                            </ul>
+
+                            <div class="tech-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">ASP.NET Core</span>
+                                <span class="tag">ASP.NET MVC</span>
+                                <span class="tag">Web API</span>
+                                <span class="tag">EF Core</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">ADO.NET</span>
+                                <span class="tag">AJAX</span>
+                                <span class="tag">JWT & RBAC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Portfolio Portfolio</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Project Category Filters -->
+                <div class="project-filters">
+                    <button class="project-filter-btn active" data-project-filter="all">All Projects</button>
+                    <button class="project-filter-btn" data-project-filter="web">Web Applications</button>
+                    <button class="project-filter-btn" data-project-filter="enterprise">Enterprise Systems</button>
+                    <button class="project-filter-btn" data-project-filter="desktop">Desktop Apps</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: GUrbanNext -->
+                    <div class="glass-card project-card" data-project-category="web enterprise" id="project-gurbannext">
+                        <div class="project-banner banner-society">
+                            <div class="project-banner-overlay"></div>
+                            <span class="project-type-badge"><i class="fa-solid fa-city"></i> Housing Enterprise</span>
+                            <div class="banner-icon-box">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">GUrbanNext</h3>
+                            <p class="project-subtitle">Housing Society Management System</p>
+
+                            <p class="project-description">
+                                A comprehensive role-based web solution designed to digitize daily housing society
+                                operations, resident workflows, maintenance billing, and visitor security.
+                            </p>
+
+                            <div class="project-features-list">
+                                <span><i class="fa-solid fa-check"></i> Multi-Role Modules (Admin, Secretary, Security,
+                                    Account, Resident)</span>
+                                <span><i class="fa-solid fa-check"></i> Wing, Flat & Parking Allocation System</span>
+                                <span><i class="fa-solid fa-check"></i> Maintenance Collection & Financial Expense
+                                    Tracking</span>
+                                <span><i class="fa-solid fa-check"></i> Visitor Gate Entry & Employee Attendance
+                                    Tracking</span>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>C#</span>
+                                <span>ASP.NET Core API</span>
+                                <span>EF Core</span>
+                                <span>Angular</span>
+                                <span>SQL Server</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm view-project-modal-btn" data-project="gurbannext">
+                                    <i class="fa-solid fa-circle-info"></i> Project Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: GNTicketCore -->
+                    <div class="glass-card project-card" data-project-category="web" id="project-gnticketcore">
+                        <div class="project-banner banner-ticket">
+                            <div class="project-banner-overlay"></div>
+                            <span class="project-type-badge"><i class="fa-solid fa-headset"></i> Support & SLA</span>
+                            <div class="banner-icon-box">
+                                <i class="fa-solid fa-ticket-simple"></i>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">GNTicketCore</h3>
+                            <p class="project-subtitle">Web Ticket Management System</p>
+
+                            <p class="project-description">
+                                Scalable support ticket management platform engineered with complete lifecycle tracking,
+                                SLA monitoring, automated alerts, and real-time AJAX commentary updates.
+                            </p>
+
+                            <div class="project-features-list">
+                                <span><i class="fa-solid fa-check"></i> Admin, Team Leader, Agent & Customer
+                                    Dashboards</span>
+                                <span><i class="fa-solid fa-check"></i> Complete Lifecycle (Create, Assign, Escalate,
+                                    Resolve)</span>
+                                <span><i class="fa-solid fa-check"></i> SLA Tracking & Automated Overdue Alerts</span>
+                                <span><i class="fa-solid fa-check"></i> AJAX Real-Time Filtering & Feedback
+                                    Ratings</span>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>C#</span>
+                                <span>ASP.NET MVC</span>
+                                <span>ADO.NET</span>
+                                <span>AJAX</span>
+                                <span>Bootstrap</span>
+                                <span>SQL Server</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm view-project-modal-btn"
+                                    data-project="gnticketcore">
+                                    <i class="fa-solid fa-circle-info"></i> Project Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: GDispatchHub -->
+                    <div class="glass-card project-card" data-project-category="desktop enterprise"
+                        id="project-gdispatchhub">
+                        <div class="project-banner banner-courier">
+                            <div class="project-banner-overlay"></div>
+                            <span class="project-type-badge"><i class="fa-solid fa-truck-fast"></i> Logistics
+                                Desktop</span>
+                            <div class="banner-icon-box">
+                                <i class="fa-solid fa-boxes-packing"></i>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">GDispatchHub</h3>
+                            <p class="project-subtitle">Courier Management System</p>
+
+                            <p class="project-description">
+                                Enterprise desktop software handling end-to-end parcel bookings, courier tracking,
+                                delivery partner assignments, branch transfers, and COD amount reconciliation.
+                            </p>
+
+                            <div class="project-features-list">
+                                <span><i class="fa-solid fa-check"></i> Customer, Business, Admin, Branch & Delivery
+                                    Modules</span>
+                                <span><i class="fa-solid fa-check"></i> Live Parcel Booking & Tracking Console</span>
+                                <span><i class="fa-solid fa-check"></i> Pickup Partner Assignment & Delivery Status
+                                    Updates</span>
+                                <span><i class="fa-solid fa-check"></i> Return Parcel Processing & Cash on Delivery
+                                    Management</span>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>C#</span>
+                                <span>WinForms</span>
+                                <span>ADO.NET</span>
+                                <span>SQL Server</span>
+                                <span>Stored Procedures</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm view-project-modal-btn"
+                                    data-project="gdispatchhub">
+                                    <i class="fa-solid fa-circle-info"></i> Project Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Academic Background</span>
+                    <h2 class="section-title">Education & <span class="gradient-text">Qualifications</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="education-grid">
+                    <div class="glass-card education-card">
+                        <div class="edu-badge"><i class="fa-solid fa-award"></i> Distinction</div>
+                        <div class="edu-header">
+                            <div class="edu-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
+                                <p class="edu-university"><i class="fa-solid fa-university"></i> Shivaji University,
+                                    Kolhapur</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-details-row">
+                            <div class="edu-meta">
+                                <span class="label">Graduation Date:</span>
+                                <span class="val"><i class="fa-regular fa-calendar"></i> April 2025</span>
+                            </div>
+                            <div class="edu-score">
+                                <span class="score-label">Cumulative Grade:</span>
+                                <span class="score-val gradient-text">CGPA 9.7 / 10</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-highlights">
+                            <h4>Key Academic Focus Areas:</h4>
+                            <div class="edu-tags">
+                                <span>Object-Oriented Programming (OOP)</span>
+                                <span>Database Management Systems (DBMS)</span>
+                                <span>Software Engineering Architecture</span>
+                                <span>Data Structures & Algorithms</span>
+                                <span>Web Development Technologies</span>
+                                <span>Operating Systems & Networking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-desc">I am currently available for Software Developer opportunities. Feel free to
+                        send a message or reach out directly!</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="glass-card contact-info-card">
+                        <h3><i class="fa-solid fa-comments"></i> Contact Information</h3>
+                        <p>Have a question or want to discuss a software role? Reach out via any of the channels below.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Email Address</span>
+                                    <a href="mailto:shreyatoraskar09@gmail.com"
+                                        class="method-value">shreyatoraskar09@gmail.com</a>
+                                </div>
+                                <button class="btn btn-icon copy-btn" data-copy="shreyatoraskar09@gmail.com"
+                                    title="Copy Email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Phone / WhatsApp</span>
+                                    <a href="tel:9272024582" class="method-value">+91 9272024582</a>
+                                </div>
+                                <button class="btn btn-icon copy-btn" data-copy="9272024582" title="Copy Phone">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">LinkedIn Profile</span>
+                                    <a href="https://linkedin.com/in/shreya-toraskar03" target="_blank" rel="noopener"
+                                        class="method-value">linkedin.com/in/shreya-toraskar03</a>
+                                </div>
+                                <a href="https://linkedin.com/in/shreya-toraskar03" target="_blank" rel="noopener"
+                                    class="btn btn-icon" title="Visit Profile">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">Maharashtra, India (Open to Remote / Relocation)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-status-banner">
+                            <i class="fa-solid fa-circle-check"></i> Available for Immediate Joining / Interview
+                            Schedule
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="glass-card contact-form-card">
+                        <h3><i class="fa-regular fa-paper-plane"></i> Send Me a Message</h3>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="senderName">Your Full Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-user input-icon"></i>
+                                    <input type="text" id="senderName" required placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senderEmail">Your Email Address <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-envelope input-icon"></i>
+                                    <input type="email" id="senderEmail" required placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senderSubject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-heading input-icon"></i>
+                                    <input type="text" id="senderSubject"
+                                        placeholder="Software Developer Position Inquiry">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senderMessage">Message <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fa-regular fa-comment input-icon"></i>
+                                    <textarea id="senderMessage" rows="4" required
+                                        placeholder="Hi Shreya, I checked out your portfolio and would like to connect..."></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitMsgBtn">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="brand-code"></span> Shreya Toraskar
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/shreya-toraskar03" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:shreyatoraskar09@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="tel:9272024582"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Notification Toast Element -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Resume Modal -->
+    <div class="modal-overlay" id="resumeModal">
+        <div class="modal-content glass-card resume-modal-card">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="fa-solid fa-file-pdf"></i> Resume Preview - Shreya Toraskar</h3>
+                <button class="modal-close-btn" id="closeResumeModal">&times;</button>
+            </div>
+            <div class="modal-body resume-body">
+                <div class="resume-preview-wrapper">
+                    <!-- Clean Formatted Resume View -->
+                    <div class="resume-paper">
+                        <header class="paper-header">
+                            <h2>SHREYA TORASKAR</h2>
+                            <p class="paper-role">Software Developer</p>
+                            <p class="paper-contact">
+                                📞 +91 9272024582 | ✉️ shreyatoraskar09@gmail.com | 🔗 linkedin.com/in/shreya-toraskar03
+                            </p>
+                        </header>
+
+                        <section class="paper-section">
+                            <h3>TECHNICAL SUMMARY</h3>
+                            <p>
+                                Software Developer with 1+ years of professional experience developing scalable and
+                                maintainable web applications using C#, ASP.NET Core, Web API, Entity Framework Core,
+                                and SQL Server. Experienced in designing RESTful APIs, implementing JWT-based
+                                authentication/authorization, Dependency Injection, middleware, and 3-tier architecture.
+                                Strong knowledge of database operations, query optimization, and API performance tuning.
+                            </p>
+                        </section>
+
+                        <section class="paper-section">
+                            <h3>TECHNICAL SKILLS</h3>
+                            <ul>
+                                <li><strong>Languages:</strong> C#, JavaScript, SQL, HTML5, CSS3</li>
+                                <li><strong>Backend:</strong> ASP.NET Core, ASP.NET MVC, Web API, ADO.NET, EF Core, LINQ
+                                </li>
+                                <li><strong>Frontend:</strong> Angular (SPA), HTML, CSS, Bootstrap, jQuery, AJAX</li>
+                                <li><strong>Database:</strong> MS SQL Server (Indexes, Stored Procedures, Triggers,
+                                    Views, Query Optimization)</li>
+                                <li><strong>Architecture:</strong> SOLID Principles, Repository Pattern, 3-Tier
+                                    Architecture, MVC</li>
+                            </ul>
+                        </section>
+
+                        <section class="paper-section">
+                            <h3>PROFESSIONAL EXPERIENCE</h3>
+                            <div class="paper-item">
+                                <div class="item-title-row">
+                                    <strong>Software Developer — G-Next Innovation Code Square</strong>
+                                    <span>June 2025 – Present</span>
+                                </div>
+                                <ul>
+                                    <li>Developed 3-tier architecture applications separating Presentation, Business
+                                        Logic, and Data Access layers in C#.</li>
+                                    <li>Implemented JWT secure authentication and Role-Based Access Control (RBAC).</li>
+                                    <li>Built optimized SQL Server Stored Procedures, Views, Triggers, and parameterized
+                                        queries.</li>
+                                    <li>Integrated AJAX functionality for asynchronous partial page updates.</li>
+                                    <li>Utilized ADO.NET, EF Core, and LINQ for efficient database transactions.</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="paper-section">
+                            <h3>FEATURED PROJECTS</h3>
+                            <ul>
+                                <li><strong>GUrbanNext:</strong> Housing Society Management System (C#, ASP.NET Core Web
+                                    API, EF Core, Angular, SQL Server). Role-based modules, financial maintenance,
+                                    visitor entry & parking management.</li>
+                                <li><strong>GNTicketCore:</strong> Web Ticket Management System (C#, ASP.NET MVC,
+                                    ADO.NET, AJAX, Bootstrap, SQL Server). Full ticket lifecycle, SLA tracking,
+                                    automated overdue alerts, AJAX live updates.</li>
+                                <li><strong>GDispatchHub:</strong> Courier Management System (C#, WinForms, ADO.NET, SQL
+                                    Server). Courier booking, tracking console, delivery partner assignment, return
+                                    processing & COD handling.</li>
+                            </ul>
+                        </section>
+
+                        <section class="paper-section">
+                            <h3>EDUCATION</h3>
+                            <div class="item-title-row">
+                                <strong>B.Sc. Computer Science | Shivaji University, Kolhapur</strong>
+                                <span>Graduated April 2025 (CGPA: 9.7)</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="printResumeBtn"><i class="fa-solid fa-print"></i> Print / Save
+                    PDF</button>
+                <button class="btn btn-secondary" id="closeResumeModalBottom">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal Dynamic Container -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content glass-card project-modal-card">
+            <div class="modal-header">
+                <h3 class="modal-title" id="projectModalTitle">Project Details</h3>
+                <button class="modal-close-btn" id="closeProjectModal">&times;</button>
+            </div>
+            <div class="modal-body" id="projectModalBody">
+                <!-- Dynamic Content injected via JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="closeProjectModalBottom">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
